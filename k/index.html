@@ -23,9 +23,13 @@
         window.onload = () => {
             let localStream;
             // カメラ映像取得
-            var constraints = {
+            /*var constraints = {
             audio: false,
             video: {facingMode: "user"}
+            };*/
+            var constraints = {
+            audio: false,
+            video: {facingMode: "environment"}
             };
             constraints.video.width = {
                 min: 1920,
